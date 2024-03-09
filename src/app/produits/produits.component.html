@@ -1,0 +1,12 @@
+<div class="d-flex justify-content-center" id="content-div" >
+    <div class="card" style="width: 18rem;" *ngFor="let tabProduct of tabProducts">
+        <img src="{{tabProduct.image}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{tabProduct.title}} </h5>
+          <p class="card-text">{{tabProduct.description}} </p>
+          <button class="btn btn-color" (click)="redirigerVersAutrePage()">Plus...</button>
+        </div>
+      </div>
+      
+      <!-- <app-detail-login [product]="selectedProduct" (addToCart)="addToCart($event)"></app-detail-login> -->
+  </div>
